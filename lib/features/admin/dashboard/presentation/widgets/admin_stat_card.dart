@@ -71,7 +71,7 @@ class AdminStatCard extends StatelessWidget {
                     color: AppColors.textPrimary,
                   ),
                 ),
-                AppSizes.p4.verticalSpace,
+                //AppSizes.p4.verticalSpace,
                 Text(
                   title,
                   style: AppTextStyles.bodySmall.copyWith(

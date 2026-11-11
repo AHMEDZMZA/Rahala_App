@@ -20,6 +20,9 @@ class AppStrings {
   static String get errorNetwork => 'errors.network'.tr();
   static String get errorServer => 'errors.server'.tr();
   static String get errorUnauthorized => 'errors.unauthorized'.tr();
+  static String get errorCancel => 'errors.cancel'.tr();
+  static String get errorOccurred => 'حدث خطأ ما'.tr();
+  static String get retry => 'إعادة المحاولة'.tr();
 
   // Validation
   static String get requiredField => 'validation.required'.tr();
@@ -43,6 +46,8 @@ class AppStrings {
   // Labels
   static String get emailLabel => 'labels.email'.tr();
   static String get passwordLabel => 'labels.password'.tr();
+  static String get currentPasswordLabel => 'labels.currentPassword'.tr();
+  static String get newPasswordLabel => 'labels.newPassword'.tr();
   static String get phoneLabel => 'labels.phone'.tr();
   static String get nameLabel => 'labels.name'.tr();
   static String get confirmPasswordLabel => 'labels.confirmPassword'.tr();
@@ -50,6 +55,8 @@ class AppStrings {
   // Hints
   static String get emailHint => 'hints.email'.tr();
   static String get passwordHint => 'hints.password'.tr();
+  static String get currentPasswordHint => 'hints.currentPassword'.tr();
+  static String get newPasswordHint => 'hints.newPassword'.tr();
   static String get searchHint => 'hints.search'.tr();
   static String get confirmPasswordHint => 'hints.confirmPassword'.tr();
   static String get phoneHint => 'hints.phone'.tr();
@@ -80,6 +87,16 @@ class AppStrings {
   static String get homeNavFavorites => 'home.navFavorites'.tr();
   static String get homeNavMore => 'home.navMore'.tr();
 
+  // Explore
+  static String get exploreTitle => 'استكشاف الرحلات';
+  static String get exploreDestination => 'جهة الوصول';
+  static String get exploreOrigin => 'مكان الانطلاق';
+  static String get exploreCategory => 'الفئة';
+  static String get exploreClearFilters => 'إلغاء الفلاتر';
+  static String get exploreNoResults => 'لا توجد رحلات مطابقة';
+  static String get exploreNoResultsSubtitle =>
+      'جرب تغيير فلاتر البحث للعثور على رحلات مناسبة';
+
   // Bookings
   static String get bookingsTitle => 'bookings.title'.tr();
   static String get bookingsFilterAll => 'bookings.filterAll'.tr();
@@ -101,43 +118,67 @@ class AppStrings {
   static String get tripDetailsAvailableSeats =>
       'tripDetails.availableSeats'.tr();
   static String get tripDetailsDays => 'tripDetails.days'.tr();
-  static String get tripDetailsTransportIncluded => 'tripDetails.transport Included'.tr();
+  static String get tripDetailsTransportIncluded =>
+      'tripDetails.transport Included'.tr();
   static String get tripDetailsSaveForLater => 'tripDetails.saveForLater'.tr();
 
   // Booking Confirmation
-  static String get bookingConfirmationTitle => 'bookingConfirmation.title'.tr();
-  static String get bookingConfirmationNumberOfIndividuals => 'bookingConfirmation.numberOfIndividuals'.tr();
-  static String get bookingConfirmationPerPerson => 'bookingConfirmation.perPerson'.tr();
-  static String get bookingConfirmationSpecialNotes => 'bookingConfirmation.specialNotes'.tr();
-  static String get bookingConfirmationSpecialNotesHint => 'bookingConfirmation.specialNotesHint'.tr();
-  static String get bookingConfirmationPriceSummary => 'bookingConfirmation.priceSummary'.tr();
-  static String get bookingConfirmationTripCost => 'bookingConfirmation.tripCost'.tr();
-  static String get bookingConfirmationDiscount => 'bookingConfirmation.discount'.tr();
-  static String get bookingConfirmationServiceFee => 'bookingConfirmation.serviceFee'.tr();
-  static String get bookingConfirmationFinalPrice => 'bookingConfirmation.finalPrice'.tr();
-  static String get bookingConfirmationConfirmBooking => 'bookingConfirmation.confirmBooking'.tr();
-  static String get bookingConfirmationBookingPolicyAgree => 'bookingConfirmation.bookingPolicyAgree'.tr();
-  static String get bookingConfirmationBookingPolicy => 'bookingConfirmation.bookingPolicy'.tr();
+  static String get bookingConfirmationTitle =>
+      'bookingConfirmation.title'.tr();
+  static String get bookingConfirmationNumberOfIndividuals =>
+      'bookingConfirmation.numberOfIndividuals'.tr();
+  static String get bookingConfirmationPerPerson =>
+      'bookingConfirmation.perPerson'.tr();
+  static String get bookingConfirmationSpecialNotes =>
+      'bookingConfirmation.specialNotes'.tr();
+  static String get bookingConfirmationSpecialNotesHint =>
+      'bookingConfirmation.specialNotesHint'.tr();
+  static String get bookingConfirmationPriceSummary =>
+      'bookingConfirmation.priceSummary'.tr();
+  static String get bookingConfirmationTripCost =>
+      'bookingConfirmation.tripCost'.tr();
+  static String get bookingConfirmationDiscount =>
+      'bookingConfirmation.discount'.tr();
+  static String get bookingConfirmationServiceFee =>
+      'bookingConfirmation.serviceFee'.tr();
+  static String get bookingConfirmationFinalPrice =>
+      'bookingConfirmation.finalPrice'.tr();
+  static String get bookingConfirmationConfirmBooking =>
+      'bookingConfirmation.confirmBooking'.tr();
+  static String get bookingConfirmationBookingPolicyAgree =>
+      'bookingConfirmation.bookingPolicyAgree'.tr();
+  static String get bookingConfirmationBookingPolicy =>
+      'bookingConfirmation.bookingPolicy'.tr();
 
   // Booking Details
   static String get bookingDetailsTitle => 'bookingDetails.title'.tr();
-  static String get bookingDetailsBookingData => 'bookingDetails.bookingData'.tr();
-  static String get bookingDetailsBookingNumber => 'bookingDetails.bookingNumber'.tr();
-  static String get bookingDetailsBookingDate => 'bookingDetails.bookingDate'.tr();
+  static String get bookingDetailsBookingData =>
+      'bookingDetails.bookingData'.tr();
+  static String get bookingDetailsBookingNumber =>
+      'bookingDetails.bookingNumber'.tr();
+  static String get bookingDetailsBookingDate =>
+      'bookingDetails.bookingDate'.tr();
   static String get bookingDetailsStatus => 'bookingDetails.status'.tr();
   static String get bookingDetailsConfirmed => 'bookingDetails.confirmed'.tr();
-  static String get bookingDetailsIndividuals => 'bookingDetails.individuals'.tr();
+  static String get bookingDetailsIndividuals =>
+      'bookingDetails.individuals'.tr();
   static String get bookingDetailsAdults => 'bookingDetails.adults'.tr();
-  static String get bookingDetailsPaymentMethod => 'bookingDetails.paymentMethod'.tr();
+  static String get bookingDetailsPaymentMethod =>
+      'bookingDetails.paymentMethod'.tr();
   static String get bookingDetailsBankCard => 'bookingDetails.bankCard'.tr();
-  static String get bookingDetailsTotalPrice => 'bookingDetails.totalPrice'.tr();
+  static String get bookingDetailsTotalPrice =>
+      'bookingDetails.totalPrice'.tr();
   static String get bookingDetailsTripData => 'bookingDetails.tripData'.tr();
-  static String get bookingDetailsDestination => 'bookingDetails.destination'.tr();
+  static String get bookingDetailsDestination =>
+      'bookingDetails.destination'.tr();
   static String get bookingDetailsTripDates => 'bookingDetails.tripDates'.tr();
   static String get bookingDetailsDuration => 'bookingDetails.duration'.tr();
-  static String get bookingDetailsMeetingPoint => 'bookingDetails.meetingPoint'.tr();
-  static String get bookingDetailsMeetingTime => 'bookingDetails.meetingTime'.tr();
-  static String get bookingDetailsCancelBooking => 'bookingDetails.cancelBooking'.tr();
+  static String get bookingDetailsMeetingPoint =>
+      'bookingDetails.meetingPoint'.tr();
+  static String get bookingDetailsMeetingTime =>
+      'bookingDetails.meetingTime'.tr();
+  static String get bookingDetailsCancelBooking =>
+      'bookingDetails.cancelBooking'.tr();
   static String get bookingDetailsContactUs => 'bookingDetails.contactUs'.tr();
 
   // Notifications Tab
@@ -145,10 +186,13 @@ class AppStrings {
   static String get notificationsEmpty => 'notifications.empty'.tr();
   static String get notificationsJustNow => 'notifications.justNow'.tr();
   static String get notificationsHoursAgo => 'notifications.hoursAgo'.tr();
-  static String get notificationsBookingConfirmed => 'notifications.bookingConfirmed'.tr();
-  static String get notificationsBookingConfirmedDesc => 'notifications.bookingConfirmedDesc'.tr();
+  static String get notificationsBookingConfirmed =>
+      'notifications.bookingConfirmed'.tr();
+  static String get notificationsBookingConfirmedDesc =>
+      'notifications.bookingConfirmedDesc'.tr();
   static String get notificationsNewOffer => 'notifications.newOffer'.tr();
-  static String get notificationsNewOfferDesc => 'notifications.newOfferDesc'.tr();
+  static String get notificationsNewOfferDesc =>
+      'notifications.newOfferDesc'.tr();
 
   // Favorites Tab
   static String get favoritesTitle => 'favorites.title'.tr();
@@ -158,7 +202,11 @@ class AppStrings {
   static String get profileTitle => 'profile.title'.tr();
   static String get profilePersonalData => 'profile.personalData'.tr();
   static String get profileEditAccount => 'profile.editAccount'.tr();
+  static String get profileEditProfile => 'profile.editProfile'.tr();
+  static String get profileUpdateSuccess => 'profile.updateSuccess'.tr();
   static String get profileChangePassword => 'profile.changePassword'.tr();
+  static String get profileChangePasswordSuccess =>
+      'profile.changePasswordSuccess'.tr();
   static String get profileHelpSupport => 'profile.helpSupport'.tr();
   static String get profileAboutApp => 'profile.aboutApp'.tr();
   static String get profileLogout => 'profile.logout'.tr();
@@ -190,7 +238,8 @@ class AppStrings {
   static String get adminAddTripTitle => 'admin.addTripTitle'.tr();
   static String get adminStepBasicInfo => 'admin.stepBasicInfo'.tr();
   static String get adminStepPriceAndDates => 'admin.stepPriceAndDates'.tr();
-  static String get adminStepMediaAndServices => 'admin.stepMediaAndServices'.tr();
+  static String get adminStepMediaAndServices =>
+      'admin.stepMediaAndServices'.tr();
   static String get adminStepItinerary => 'admin.stepItinerary'.tr();
   static String get adminTripTitleLabel => 'admin.tripTitleLabel'.tr();
   static String get adminTripTitleHint => 'admin.tripTitleHint'.tr();
@@ -220,18 +269,23 @@ class AppStrings {
   static String get adminAddActivityButton => 'admin.addActivityButton'.tr();
   static String get adminActivityTitleLabel => 'admin.activityTitleLabel'.tr();
   static String get adminActivityTimeLabel => 'admin.activityTimeLabel'.tr();
-  static String get adminActivityLocationLabel => 'admin.activityLocationLabel'.tr();
+  static String get adminActivityLocationLabel =>
+      'admin.activityLocationLabel'.tr();
   static String get adminNextStep => 'admin.nextStep'.tr();
   static String get adminPreviousStep => 'admin.previousStep'.tr();
   static String get adminPublishTrip => 'admin.publishTrip'.tr();
   static String get adminSaveDraft => 'admin.saveDraft'.tr();
   static String get adminPickCoverImage => 'admin.pickCoverImage'.tr();
   static String get adminPickGalleryImages => 'admin.pickGalleryImages'.tr();
-  static String get adminPickActivityImageOptional => 'admin.pickActivityImageOptional'.tr();
+  static String get adminPickActivityImageOptional =>
+      'admin.pickActivityImageOptional'.tr();
   static String get adminAddCustomService => 'admin.addCustomService'.tr();
-  static String get adminPresetIncludedServices => 'admin.presetIncludedServices'.tr();
-  static String get adminPresetExcludedServices => 'admin.presetExcludedServices'.tr();
-  static String get adminBookingRequestsTitle => 'admin.bookingRequestsTitle'.tr();
+  static String get adminPresetIncludedServices =>
+      'admin.presetIncludedServices'.tr();
+  static String get adminPresetExcludedServices =>
+      'admin.presetExcludedServices'.tr();
+  static String get adminBookingRequestsTitle =>
+      'admin.bookingRequestsTitle'.tr();
   static String get adminFilterPending => 'admin.filterPending'.tr();
   static String get adminFilterAccepted => 'admin.filterAccepted'.tr();
   static String get adminFilterRejected => 'admin.filterRejected'.tr();
@@ -239,23 +293,33 @@ class AppStrings {
   static String get adminRejectRequest => 'admin.rejectRequest'.tr();
   static String get adminAcceptedBanner => 'admin.acceptedBanner'.tr();
   static String get adminRejectedBanner => 'admin.rejectedBanner'.tr();
-  static String get adminPassengersCountLabel => 'admin.passengersCountLabel'.tr();
+  static String get adminPassengersCountLabel =>
+      'admin.passengersCountLabel'.tr();
   static String get adminTotalAmountLabel => 'admin.totalAmountLabel'.tr();
-  static String get adminBookingDetailsTitle => 'admin.bookingDetailsTitle'.tr();
-  static String get adminCustomerDataSection => 'admin.customerDataSection'.tr();
+  static String get adminBookingDetailsTitle =>
+      'admin.bookingDetailsTitle'.tr();
+  static String get adminCustomerDataSection =>
+      'admin.customerDataSection'.tr();
   static String get adminTripDataSection => 'admin.tripDataSection'.tr();
-  static String get adminBookingDetailsSection => 'admin.bookingDetailsSection'.tr();
-  static String get adminCustomerNotesSection => 'admin.customerNotesSection'.tr();
+  static String get adminBookingDetailsSection =>
+      'admin.bookingDetailsSection'.tr();
+  static String get adminCustomerNotesSection =>
+      'admin.customerNotesSection'.tr();
   static String get adminBookingNumberLabel => 'admin.bookingNumberLabel'.tr();
   static String get adminRequestDateLabel => 'admin.requestDateLabel'.tr();
   static String get adminPaymentMethodLabel => 'admin.paymentMethodLabel'.tr();
   static String get adminCancelBooking => 'admin.cancelBooking'.tr();
   static String get adminContactCustomer => 'admin.contactCustomer'.tr();
-  static String get adminBookingAcceptedTitle => 'admin.bookingAcceptedTitle'.tr();
-  static String get adminBookingAcceptedDesc => 'admin.bookingAcceptedDesc'.tr();
-  static String get adminBookingRejectedTitle => 'admin.bookingRejectedTitle'.tr();
-  static String get adminBookingRejectedDesc => 'admin.bookingRejectedDesc'.tr();
-  static String get adminBookingPendingTitle => 'admin.bookingPendingTitle'.tr();
+  static String get adminBookingAcceptedTitle =>
+      'admin.bookingAcceptedTitle'.tr();
+  static String get adminBookingAcceptedDesc =>
+      'admin.bookingAcceptedDesc'.tr();
+  static String get adminBookingRejectedTitle =>
+      'admin.bookingRejectedTitle'.tr();
+  static String get adminBookingRejectedDesc =>
+      'admin.bookingRejectedDesc'.tr();
+  static String get adminBookingPendingTitle =>
+      'admin.bookingPendingTitle'.tr();
   static String get adminBookingPendingDesc => 'admin.bookingPendingDesc'.tr();
 
   // General & Missing
@@ -266,4 +330,18 @@ class AppStrings {
   static String get adminPendingBookings => 'الحجوزات المعلقة';
   static String get adminTotalRevenue => 'إجمالي الإيرادات';
   static String get bookingsViewDetails => 'عرض التفاصيل';
+  static String get adminEditTripTitle => 'تعديل الرحلة';
+  static String get adminDeleteTripConfirmTitle => 'حذف الرحلة';
+  static String get adminDeleteTripConfirmDesc =>
+      'هل أنت متأكد من رغبتك في حذف هذه الرحلة؟ لا يمكن التراجع عن هذا الإجراء.';
+  static String get adminRepublishTripConfirmTitle => 'إعادة نشر الرحلة';
+  static String get adminRepublishTripConfirmDesc =>
+      'هل تريد إعادة نشر هذه الرحلة لتصبح متاحة للمستخدمين؟';
+  static String get adminTripCreatedSuccess => 'تم إضافة الرحلة بنجاح';
+  static String get adminTripUpdatedSuccess => 'تم تعديل الرحلة بنجاح';
+  static String get adminTripDeletedSuccess => 'تم حذف الرحلة بنجاح';
+  static String get adminTripRepublishedSuccess => 'تم إعادة نشر الرحلة بنجاح';
+  static String get adminSelectCity => 'اختر المدينة من القائمة';
+  static String get adminCustomCityHint => 'أو أدخل اسم مدينة أخرى';
+  static String get confirm => 'تأكيد';
 }

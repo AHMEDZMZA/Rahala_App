@@ -45,8 +45,8 @@ class AddTripStepperHeader extends StatelessWidget {
                       color: isCompleted
                           ? AppColors.primary
                           : (isCurrent
-                                ? AppColors.primary
-                                : AppColors.surface),
+                          ? AppColors.primary
+                          : AppColors.surface),
                       border: Border.all(
                         color: isCompleted || isCurrent
                             ? AppColors.primary
@@ -57,14 +57,14 @@ class AddTripStepperHeader extends StatelessWidget {
                     child: isCompleted
                         ? Icon(Icons.check, size: 16.r, color: Colors.white).center()
                         : Text(
-                            '${index + 1}',
-                            style: AppTextStyles.labelSmall.copyWith(
-                              color: isCurrent
-                                  ? Colors.white
-                                  : AppColors.textSecondary,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ).center(),
+                      '${index + 1}',
+                      style: AppTextStyles.labelSmall.copyWith(
+                        color: isCurrent
+                            ? Colors.white
+                            : AppColors.textSecondary,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ).center(),
                   ),
                   Container(
                     height: 3.h,

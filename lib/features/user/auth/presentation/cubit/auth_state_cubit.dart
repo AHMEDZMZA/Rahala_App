@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:cupertino_ui/cupertino_ui.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rahala/features/user/auth/data/models/user_model.dart';
 import 'package:rahala/features/user/auth/data/repositories/auth_repository.dart';

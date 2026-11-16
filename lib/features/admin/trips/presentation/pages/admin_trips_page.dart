@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:go_router/go_router.dart';
 import 'package:rahala/core/constants/app_colors.dart';
 import 'package:rahala/core/constants/app_strings.dart';
@@ -222,11 +222,13 @@ class _AdminTripsPageState extends State<AdminTripsPage> {
                                 .deleteTrip(trip.id);
                             if (success) {
                               AppSnackbar.showSuccess(
+                                // ignore: use_build_context_synchronously
                                 context: context,
                                 message: "تم حذف الرحلة بنجاح",
                               );
                             } else {
                               AppSnackbar.showError(
+                                // ignore: use_build_context_synchronously
                                 context: context,
                                 message: "فشل حذف الرحلة",
                               );
@@ -243,11 +245,13 @@ class _AdminTripsPageState extends State<AdminTripsPage> {
                                 .republishTrip(trip.id);
                             if (success) {
                               AppSnackbar.showSuccess(
+                                // ignore: use_build_context_synchronously
                                 context: context,
                                 message: "تم نشر الرحلة بنجاح",
                               );
                             } else {
                               AppSnackbar.showError(
+                                // ignore: use_build_context_synchronously
                                 context: context,
                                 message: "فشل نشر الرحلة",
                               );

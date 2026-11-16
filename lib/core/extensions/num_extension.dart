@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension NumExtension on num {
   /// Short alias for horizontal space (SizedBox with width)

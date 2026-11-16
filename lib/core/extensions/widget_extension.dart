@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 extension WidgetExtension on Widget {
   /// Wraps the widget in a [Padding] widget with custom [EdgeInsetsGeometry].
